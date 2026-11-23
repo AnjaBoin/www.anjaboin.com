@@ -1,0 +1,26 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+
+const { title } = Astro.props;
+const lang = Astro.currentLocale ?? 'de';
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body>
+      <Header />
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <p>&copy; {new Date().getFullYear()} Anja Boin. Alle Rechte vorbehalten.</p>
+    </footer>
+  </body>
+</html>
