@@ -1,8 +1,107 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Über mich">
-  <h1>Über mich</h1>
-  <p>Hier erzähle ich bald mehr über mich.</p>
+    <!-- Large photo across the full width -->
+    <section class="hero">
+        <img src="/images/anja-hero.jpg" alt="Anja Rentier-Boin" />
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro content">
+        <p class="label">Über Anja</p>
+        <h1>Willkommen.</h1>
+        <p class="lead">
+            Pilotin, Mediatorin, Anwendungsentwicklerin und vor allem ein
+            interessierter, neugieriger Mensch. 25&nbsp;Jahre bin ich um die Welt
+            geflogen, doch meine Leidenschaft galt immer den Menschen:
+            Psychologie und Gewaltfreie Kommunikation. Mit meinem ungewöhnlichen
+            Lebensweg möchte ich andere inspirieren.
+        </p>
+    </section>
+
+    <!-- Main text -->
+    <section class="content">
+        <h2>Hier kommt eine Zwischenüberschrift.</h2>
+        <p>Hier kommt mein Text.</p>
+        <a href="/de/" class="button">
+            Zur Startseite
+        </a>
+    </section>
 </BaseLayout>
+
+<style>
+    /* Photo on a dark, warm background */
+    .hero {
+        background: var(--color-text);
+        display: flex;
+        justify-content: center;
+        padding: 7rem 1.25rem;
+    }
+
+    .hero img {
+        display: block;
+        width: 100%;
+        max-width: 75rem;
+        height: auto;
+        max-height: 100vh;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    }
+
+    /* Introduction centered */
+    .intro {
+        text-align: center;
+        max-width: 70rem;
+    }
+
+    /* Small label */
+    .label {
+        display: inline-block;
+        margin: 0;
+        padding: 0.25rem 0.6rem;
+        background: var(--color-accent-block);
+        color: var(--color-background);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    /* Large heading, grows with the screen */
+    .intro h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        margin: 1rem 0;
+    }
+
+    /* Introductory sentence */
+    .lead {
+        font-family: var(--font-headings);
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
+    /* Subheading */
+    .content h2 {
+        font-weight: normal;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    /* Button with rounded border */
+    .button {
+        display: inline-block;
+        padding: 0.75rem 2rem;
+        border: 1px solid var(--color-text);
+        border-radius: 999px;
+        color: var(--color-text);
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background: var(--color-text);
+        color: var(--color-background);
+    }
+</style>

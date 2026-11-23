@@ -1,4 +1,53 @@
+/* Colors and fonts */
+:root {
+    --color-background: #FBF7F2;
+    /* warm cream */
+    --color-text: #3B2F2A;
+    /* dark brown */
+    --color-accent: #A84F2B;
+    /* terracotta, for links */
+    --color-accent-block: #3B2F2A;
+    /* terracotta, for links */
+    --color-soft: #EFE4D6;
+    /* soft sand, for surfaces */
+
+    --font-headings: Georgia, 'Times New Roman', serif;
+    --font-body: 'Montserrat Variable', Arial, sans-serif
+}
+
+/* Include padding in width and height */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* The whole page */
 body {
-  font-family: sans-serif;
-  background-color: lightyellow;
+    margin: 0;
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    line-height: 1.7;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    font-family: var(--font-headings);
+    line-height: 1.2;
+}
+
+/* Text column: use class="content" where you want a calm column */
+.content {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+/* Links */
+a {
+    color: var(--color-accent);
 }

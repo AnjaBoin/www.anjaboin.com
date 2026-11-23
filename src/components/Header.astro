@@ -1,30 +1,224 @@
 ---
-import { t } from '../i18n/ui.js';
+import { t } from "../i18n/ui.js";
 
-const lang = Astro.currentLocale ?? 'de';
+const lang = Astro.currentLocale ?? "de";
 const currentPath = Astro.url.pathname;
 
+// Header array
 const links = [
-  { href: `/${lang}/`, label: t(lang, 'nav.home') },
-  { href: `/${lang}/about/`, label: t(lang, 'nav.about') },
+    { href: `/${lang}/`, label: t(lang, "nav.home") },
+    { href: `/${lang}/about/`, label: t(lang, "nav.about") },
 ];
+
+// Language switcher: link to the same page in every language
+const locales = ["de", "nl", "en"];
+
+// Remove the language from the path: "/de/about/" becomes "/about/"
+const pathWithoutLang = currentPath.replace(/^\/(de|nl|en)/, "") || "/";
+
+const languageLinks = locales.map((locale) => ({
+    code: locale,
+    href: `/${locale}${pathWithoutLang}`,
+}));
 ---
 
 <header class="site-header">
-  <a href={`/${lang}/`} class="site-name">Anja Rentier-Boin</a>
+    <div class="header-inner">
+        <a href={`/${lang}/`} class="site-name">
+            Anja Boin
+        </a>
 
-  <nav aria-label={t(lang, 'nav.label')}>
-    <ul class="nav-list">
-      {links.map((link) => (
-        <li>
-          <a
-            href={link.href}
-            aria-current={currentPath === link.href ? "page" : undefined}
-          >
-            {link.label}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </nav>
+        <nav aria-label={t(lang, "nav.label")}>
+            <ul class="nav-list">
+                {links.map((link) => (
+                    <li>
+                        <a
+                            href={link.href}
+                            aria-current={
+                                currentPath === link.href ? "page" : undefined
+                            }
+                        >
+                            {link.label}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </nav>
+
+        <nav class="header-extra" aria-label={t(lang, "lang.label")}>
+            <ul class="lang-list">
+                {languageLinks.map((item) => (
+                    <li>
+                        <a
+                            href={item.href}
+                            lang={item.code}
+                            hreflang={item.code}
+                            aria-current={
+                                item.code === lang ? "true" : undefined
+                            }
+                        >
+                            {item.code.toUpperCase()}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </nav>
+    </div>
 </header>
+
+<style>
+    /* Full-width bar that stays at the top */
+    .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: var(--color-text);
+        border-bottom: 1px solid transparent;
+        transition:
+            background 0.3s,
+            border-color 0.3s;
+    }
+
+    /* Content in a centered column, in three columns:
+         name | menu | extra */
+    .header-inner {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 2rem;
+        max-width: 75rem;
+        margin: 0 auto;
+        padding: 1.5rem 2rem;
+    }
+
+    /* Name: large and bold */
+    .site-name {
+        font-family: var(--font-headings);
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        color: var(--color-background);
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    /* Menu: in the middle, items next to each other */
+    .nav-list {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list a {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--color-background);
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .nav-list a:hover {
+        color: var(--color-soft);
+    }
+
+    .nav-list a[aria-current="page"] {
+        border-bottom: 2px solid var(--color-background);
+    }
+
+    /* Right column: pushed to the right edge */
+    .header-extra {
+        justify-self: end;
+    }
+
+    /* Language switcher: DE · NL · EN */
+    .lang-list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Dot between the languages */
+    .lang-list li + li::before {
+        content: "·";
+        margin: 0 0.5rem;
+        color: var(--color-soft);
+    }
+
+    .lang-list a {
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: var(--color-soft);
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .lang-list a:hover,
+    .lang-list a[aria-current="true"] {
+        color: var(--color-background);
+    }
+
+    /* Light state after scrolling */
+    .site-header.scrolled {
+        background: var(--color-background);
+        border-bottom-color: var(--color-soft);
+    }
+
+    .site-header.scrolled .lang-list a,
+    .site-header.scrolled .lang-list li + li::before {
+        color: var(--color-text);
+    }
+
+    .site-header.scrolled .lang-list a:hover,
+    .site-header.scrolled .lang-list a[aria-current="true"] {
+        color: var(--color-accent);
+    }
+
+    .site-header.scrolled .site-name,
+    .site-header.scrolled .nav-list a {
+        color: var(--color-text);
+    }
+
+    .site-header.scrolled .nav-list a:hover,
+    .site-header.scrolled .nav-list a[aria-current="page"] {
+        color: var(--color-accent);
+        border-bottom-color: var(--color-accent);
+    }
+
+    /* Small screens: everything below each other */
+    @media (max-width: 48rem) {
+        .header-inner {
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+            padding: 1rem 1.25rem;
+        }
+
+        .header-extra {
+            justify-self: start;
+        }
+    }
+
+    /* No animation for people who turned off motion */
+    @media (prefers-reduced-motion: reduce) {
+        .site-header,
+        .site-name,
+        .nav-list a {
+            transition: none;
+        }
+    }
+</style>
+
+<script>
+    // Switch the header to its light state after scrolling down a little
+    const header = document.querySelector(".site-header");
+
+    function updateHeader() {
+        header?.classList.toggle("scrolled", window.scrollY > 50);
+    }
+
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    updateHeader(); // also check once when the page loads
+</script>

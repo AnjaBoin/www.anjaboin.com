@@ -1,0 +1,23 @@
+---
+import { t } from "../i18n/ui.js";
+
+const lang = Astro.currentLocale ?? "de";
+---
+
+<footer>
+    <p>&copy; {new Date().getFullYear()} Anja Boin. {t(lang, "footer.rights")}</p>
+</footer>
+<style>
+  /* Footer: centered, with a thin line above */
+  footer {
+    margin-top: 3rem;
+    padding: 2rem 1.25rem;
+    border-top: 1px solid var(--color-soft);
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    margin: 0;
+  }
+</style>
