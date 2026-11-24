@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Contact">
+  <section class="content">
+    <h1>Contact</h1>
+    <p>I look forward to your message.</p>
+
+    <form class="contact-form" action="/contact.php" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required autocomplete="name" />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        autocomplete="email"
+      />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <input
+        type="text"
+        name="website"
+        class="hidden-field"
+        tabindex="-1"
+        autocomplete="off"
+        aria-hidden="true"
+      />
+      <!-- Tells the script which language to return to -->
+      <input type="hidden" name="language" value="en" />
+
+      <p class="privacy-note">
+        By submitting, your information will be used to process your request.
+      </p>
+
+      <button type="submit" class="button">
+        Send a message
+      </button>
+    </form>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Form: fields below each other */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .contact-form label {
+    font-weight: 600;
+    margin-top: 0.75rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font: inherit;
+    padding: 0.75rem;
+    border: 1px solid var(--color-soft);
+    border-radius: 0.5rem;
+    background: white;
+    color: var(--color-text);
+  }
+
+  /* Clear border when a field is active */
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 1px;
+    border-color: var(--color-accent);
+  }
+
+  /* Invisible field for spam bots */
+  .hidden-field {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .privacy-note {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  /* Same rounded button as on the about page */
+  .contact-form .button {
+    align-self: flex-start;
+  }
+</style>

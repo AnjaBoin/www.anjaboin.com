@@ -51,3 +51,32 @@ h3 {
 a {
     color: var(--color-accent);
 }
+
+/* Rounded button, used on every page */
+.button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border: 1px solid var(--color-text);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--color-text);
+  color: var(--color-background);
+}
+
+/* Light version for dark backgrounds */
+.button-light {
+  border-color: var(--color-background);
+  color: var(--color-background);
+}
+
+.button-light:hover {
+  background: var(--color-background);
+  color: var(--color-text);
+}

@@ -1,10 +1,164 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const lang = 'de';
+
+// The 3 newest German posts
+const latestPosts = (await getCollection('blog'))
+  .filter((post) => post.id.startsWith(`${lang}/`))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
 ---
 
-<BaseLayout title="Willkommen" lang="de">
-  <section class="content">
-    <h1>Startseite</h1>
-    <p>Dies ist die deutsche Seite.</p>
+<BaseLayout title="Anja Boin">
+  <!-- Dark block: text left, photo right -->
+  <section class="home-hero">
+    <div class="home-hero-inner">
+      <div class="home-hero-text">
+        <p class="roles">Pilotin · Mediatorin · Anwendungsentwicklerin</p>
+        <h1>Ich verbinde Menschen.</h1>
+        <p class="lead">Weil Frieden dort beginnt, wo wir einander zuhören.</p>
+        <a href="/de/about/" class="button button-light">Mehr über mich</a>
+      </div>
+
+      <img
+        class="home-hero-photo"
+        src="/images/anja-hero.jpg"
+        alt="Anja Boin vor einer bunten Wand"
+      />
+    </div>
+  </section>
+
+  <!-- Latest articles as cards -->
+  <section class="latest">
+    <div class="latest-inner">
+      <h2>Neueste Artikel</h2>
+
+      <ul class="card-list">
+        {latestPosts.map((post) => (
+          <li class="card">
+            <a href={`/${lang}/blog/${post.id.replace(`${lang}/`, '')}/`}>
+              {post.data.image && <img src={post.data.image} alt="" />}
+              <h3>{post.data.title}</h3>
+            </a>
+            <p>{post.data.description}</p>
+          </li>
+        ))}
+      </ul>
+
+      <a href="/de/blog/" class="button">Alle Artikel</a>
+    </div>
+  </section>
+
+  <!-- Invitation to get in touch -->
+  <section class="invite content">
+    <h2>Lass uns ins Gespräch kommen.</h2>
+    <p>Hast du eine Frage, eine Idee oder einfach Lust auf einen Austausch? Ich freue mich, von dir zu hören.</p>
+    <a href="/de/contact/" class="button">Kontakt</a>
   </section>
 </BaseLayout>
+
+<style>
+  /* Dark block, connects to the dark header */
+  .home-hero {
+    background: var(--color-text);
+    color: var(--color-background);
+  }
+
+  /* Two columns: text | photo */
+  .home-hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+
+  .roles {
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    color: var(--color-soft);
+  }
+
+  .home-hero h1 {
+    margin: 0.5rem 0 1rem;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+  }
+
+  .lead {
+    margin-bottom: 2rem;
+    font-family: var(--font-headings);
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  .home-hero-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  }
+
+  /* Latest articles */
+  .latest-inner {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+
+  /* Cards next to each other, as many as fit */
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  .card a {
+    display: block;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .card img {
+    display: block;
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .card h3 {
+    margin: 0.75rem 0 0.25rem;
+  }
+
+  .card a:hover h3 {
+    color: var(--color-accent);
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  /* Invitation centered */
+  .invite {
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+
+  /* Small screens: text above photo */
+  @media (max-width: 48rem) {
+    .home-hero-inner {
+      grid-template-columns: 1fr;
+      padding: 2.5rem 1.25rem;
+    }
+  }
+</style>

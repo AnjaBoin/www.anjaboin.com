@@ -1,6 +1,6 @@
 ---
 title: "Mijn tweede artikel"
-description: "Waarom ik applicatieontwikkelaar wil worden."
+description: "Waarom ik software ontwikkelaar wil worden."
 pubDate: 2026-11-26
 image: "/images/anja-pasfoto.jpg"
 imageAlt: "Portret van Anja"

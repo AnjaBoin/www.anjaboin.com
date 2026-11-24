@@ -1,8 +1,95 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Over mij">
-  <h1>Over mij</h1>
-  <p>Hier vertel ik binnenkort meer over mezelf.</p>
+    <!-- Large photo across the full width -->
+    <section class="hero">
+        <img src="/images/anja-hero.jpg" alt="Anja Boin" />
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro content">
+        <p class="label">Over Anja</p>
+        <h1>Welkom.</h1>
+        <p class="lead">
+            Gezagvoerder, mediator, software ontwikkelaar en vooral een geïnteresseerd, nieuwsgierig mens. 
+            25&nbsp;jaar ben ik over de wereld gevlogen, maar mijn passie lag altijd bij mensen: 
+            psychologie en geweldloze communicatie. Met mijn bijzondere levensweg wil ik anderen inspireren.
+        </p>
+    </section>
+
+    <!-- Main text -->
+    <section class="content">
+        <h2>Hier komt een tussenkop.</h2>
+        <p>Hier komt mijn tekst.</p>
+        <a href="/nl/" class="button">
+            Naar de startpagina
+        </a>
+    </section>
 </BaseLayout>
+
+<style>
+    /* Photo on a dark, warm background */
+    .hero {
+        background: var(--color-text);
+        display: flex;
+        justify-content: center;
+        padding: 7rem 1.25rem;
+    }
+
+    .hero img {
+        display: block;
+        width: 100%;
+        max-width: 75rem;
+        height: auto;
+        max-height: 100vh;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    }
+
+    /* Introduction centered */
+    .intro {
+        text-align: center;
+        max-width: 70rem;
+    }
+
+    /* Small label */
+    .label {
+        display: inline-block;
+        margin: 0;
+        padding: 0.25rem 0.6rem;
+        background: var(--color-accent-block);
+        color: var(--color-background);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    /* Large heading, grows with the screen */
+    .intro h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        margin: 1rem 0;
+    }
+
+    /* Introductory sentence */
+    .lead {
+        font-family: var(--font-headings);
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
+    /* Subheading */
+    .content h2 {
+        font-weight: normal;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    /* Button with rounded border */
+    .contact-form .button {
+        align-self: flex-start;
+    }
+</style>

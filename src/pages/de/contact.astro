@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Kontakt">
@@ -7,30 +7,41 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     <h1>Kontakt</h1>
     <p>Ich freue mich über deine Nachricht.</p>
 
-    <form
-      class="contact-form"
-      action="/contact.php"
-      method="POST"
-    >
+    <form class="contact-form" action="/contact.php" method="POST">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required autocomplete="name" />
 
       <label for="email">E-Mail</label>
-      <input type="email" id="email" name="email" required autocomplete="email" />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        autocomplete="email"
+      />
 
       <label for="message">Nachricht</label>
       <textarea id="message" name="message" rows="6" required></textarea>
 
-      <input type="text" name="website" class="hidden-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <input
+        type="text"
+        name="website"
+        class="hidden-field"
+        tabindex="-1"
+        autocomplete="off"
+        aria-hidden="true"
+      />
       <!-- Tells the script which language to return to -->
       <input type="hidden" name="language" value="de" />
 
       <p class="privacy-note">
-        Mit dem Absenden werden deine Angaben zur Bearbeitung deiner Anfrage
-        an mich übermittelt.
+        Mit dem Absenden werden deine Angaben zur Bearbeitung deiner Anfrage an
+        mich übermittelt.
       </p>
 
-      <button type="submit" class="button">Nachricht senden</button>
+      <button type="submit" class="button">
+        Nachricht senden
+      </button>
     </form>
   </section>
 </BaseLayout>
@@ -79,19 +90,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   }
 
   /* Same rounded button as on the about page */
-  .button {
+  .contact-form .button {
     align-self: flex-start;
-    font: inherit;
-    padding: 0.75rem 2rem;
-    border: 1px solid var(--color-text);
-    border-radius: 999px;
-    background: transparent;
-    color: var(--color-text);
-    cursor: pointer;
-  }
-
-  .button:hover {
-    background: var(--color-text);
-    color: var(--color-background);
   }
 </style>

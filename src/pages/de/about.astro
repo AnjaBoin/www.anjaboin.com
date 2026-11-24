@@ -5,7 +5,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 <BaseLayout title="Über mich">
     <!-- Large photo across the full width -->
     <section class="hero">
-        <img src="/images/anja-hero.jpg" alt="Anja Rentier-Boin" />
+        <img src="/images/anja-hero.jpg" alt="Anja Boin" />
     </section>
 
     <!-- Introduction -->
@@ -14,8 +14,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         <h1>Willkommen.</h1>
         <p class="lead">
             Pilotin, Mediatorin, Anwendungsentwicklerin und vor allem ein
-            interessierter, neugieriger Mensch. 25&nbsp;Jahre bin ich um die Welt
-            geflogen, doch meine Leidenschaft galt immer den Menschen:
+            interessierter, neugieriger Mensch. 25&nbsp;Jahre bin ich um die
+            Welt geflogen, doch meine Leidenschaft galt immer den Menschen:
             Psychologie und Gewaltfreie Kommunikation. Mit meinem ungewöhnlichen
             Lebensweg möchte ich andere inspirieren.
         </p>
@@ -91,17 +91,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     }
 
     /* Button with rounded border */
-    .button {
-        display: inline-block;
-        padding: 0.75rem 2rem;
-        border: 1px solid var(--color-text);
-        border-radius: 999px;
-        color: var(--color-text);
-        text-decoration: none;
-    }
-
-    .button:hover {
-        background: var(--color-text);
-        color: var(--color-background);
+    .contact-form .button {
+        align-self: flex-start;
     }
 </style>
