@@ -8,6 +8,13 @@ const currentPath = Astro.url.pathname;
 const links = [
     { href: `/${lang}/`, label: t(lang, "nav.home") },
     { href: `/${lang}/about/`, label: t(lang, "nav.about") },
+    { href: `/${lang}/blog/`, label: t(lang, "nav.blog") },
+    { href: `/${lang}/cv/`, label: t(lang, "nav.cv") },
+    {
+        href: `/${lang}/contact/`,
+        label: t(lang, "nav.contact"),
+        highlight: true,
+    },
 ];
 
 // Language switcher: link to the same page in every language
@@ -33,6 +40,7 @@ const languageLinks = locales.map((locale) => ({
                 {links.map((link) => (
                     <li>
                         <a
+                            class={link.highlight ? "nav-highlight" : undefined}
                             href={link.href}
                             aria-current={
                                 currentPath === link.href ? "page" : undefined
@@ -80,7 +88,7 @@ const languageLinks = locales.map((locale) => ({
     }
 
     /* Content in a centered column, in three columns:
-         name | menu | extra */
+           name | menu | extra */
     .header-inner {
         display: grid;
         grid-template-columns: 1fr auto 1fr;
@@ -105,6 +113,7 @@ const languageLinks = locales.map((locale) => ({
     /* Menu: in the middle, items next to each other */
     .nav-list {
         display: flex;
+        flex-wrap: wrap;
         gap: 2rem;
         list-style: none;
         margin: 0;
@@ -208,6 +217,13 @@ const languageLinks = locales.map((locale) => ({
         .nav-list a {
             transition: none;
         }
+    }
+
+    /* Contact as a rounded button */
+    .nav-list a.nav-highlight {
+        padding: 0.4rem 1.1rem;
+        border: 1px solid currentColor;
+        border-radius: 999px;
     }
 </style>
 

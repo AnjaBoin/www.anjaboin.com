@@ -4,6 +4,9 @@ export const ui = {
     'lang.label': 'Sprache wählen',
     'nav.home': 'Startseite',
     'nav.about': 'Über mich',
+    'nav.blog': 'Blog',
+    'nav.cv': 'Lebenslauf',
+    'nav.contact': 'Kontakt',
     'footer.rights': 'Alle Rechte vorbehalten.',
   },
   nl: {
@@ -11,6 +14,9 @@ export const ui = {
     'lang.label': 'Taal kiezen',
     'nav.home': 'Home',
     'nav.about': 'Over mij',
+    'nav.blog': 'Blog',
+    'nav.cv': 'CV',
+    'nav.contact': 'Contact',
     'footer.rights': 'Alle rechten voorbehouden.',
   },
   en: {
@@ -18,6 +24,9 @@ export const ui = {
     'lang.label': 'Choose language',
     'nav.home': 'Home',
     'nav.about': 'About me',
+    'nav.blog': 'Blog',
+    'nav.cv': 'CV',
+    'nav.contact': 'Contact',
     'footer.rights': 'All rights reserved.',
   },
 };
