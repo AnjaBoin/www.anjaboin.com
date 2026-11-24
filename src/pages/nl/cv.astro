@@ -1,10 +1,218 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+// Timeline: newest period first
+const timeline = [
+  {
+    years: "2026 – 2027",
+    title:
+      "Omscholing tot software ontwikkelaar\n(Fachinformatikerin für Anwendungsentwicklung)",
+    place: "Berufsförderungswerk Oberhausen",
+    text: "Java, SQL en webontwikkeling.\nStage bij Bruckmann Steuerungstechnik GmbH (oktober tot december 2026).",
+    icon: "💻",
+    quote: "",
+  },
+  {
+    years: "2001 – heden",
+    title: "Verkeersvlieger, sinds 2019 gezagvoerder",
+    place: "Lufthansa CityLine, Düsseldorf",
+    text: "Internationale en nationale lijnvluchten.\nGezagvoerder op de CRJ-900; eerdere types: CRJ-serie, Embraer 195, Airbus A340-300.",
+    icon: "✈️",
+    quote: "",
+  },
+  {
+    years: "2022",
+    title: "Opleidingen bewegings- en leefstijlcoaching",
+    place: "Benvitaal Academie, online cursus",
+    text: "Beweegcoach, voedingscoach en leefstijlcoach. Focus op preventie en gezondheidsbevordering.",
+    icon: "🏃‍♀️",
+    quote: "",
+  },
+  {
+    years: "2021",
+    title: "IT-opleidingen",
+    place:
+      "Bit Academy, TechGrounds, Avans+, Codaisseur e.a. (online cursussen)",
+    text: "Full stack webontwikkeling, data engineering, objectgeoriënteerd programmeren.\nDesign thinking en Scrum Master (PSM1).",
+    icon: "📚",
+    quote: "",
+  },
+  {
+    years: "2019 – 2020",
+    title: "Opleiding tot mediator",
+    place: "Zentrum für Mediation, Steyerberg (Duitsland)",
+    text: "Gecertificeerd mediator (BM-richtlijnen).",
+    icon: "🤝",
+    quote: "",
+  },
+  {
+    years: "1997 – 2000",
+    title: "Opleiding tot verkeersvlieger (ATPL)",
+    place: "Nationale vliegschool, Enschede",
+    text: "Trainingsperiode in Venice, Florida. ATPL-diploma volgens JAR-FCL.",
+    icon: "🛫",
+    quote: "",
+  },
+  {
+    years: "1996 – 1997",
+    title: "Medewerker beveiligingsafdeling",
+    place: "PBNA, Arnhem",
+    text: "Beheer van klantgegevens, organisatie en afhandeling van veiligheidsexamens.",
+    icon: "🔒",
+    quote: "",
+  },
+  {
+    years: "1995 – 1996",
+    title: "Fysiotherapeut",
+    place: "Praktijk Rick de Vries, Hamminkeln",
+    text: "Behandeling van patiënten met massage, training en verschillende therapievormen.",
+    icon: "🤲",
+    quote: "",
+  },
+  {
+    years: "1991 – 1995",
+    title: "Opleiding fysiotherapie",
+    place: "HAN, Arnhem/Nijmegen",
+    text: "Bachelordiploma fysiotherapie.",
+    icon: "🎓",
+    quote: "",
+  },
+];
 ---
 
-<BaseLayout title="Curriculum vitae">
-  <section class="content">
-    <h1>Curriculum Vitae</h1>
-    <p>Deze pagina komt binnenkort.</p>
+<BaseLayout title="Levensloop">
+  <section class="content cv-page">
+    <h1>Levensloop</h1>
+    <p>Mijn weg in etappes – van de behandelkamer via de cockpit naar code.</p>
+
+    <ol class="timeline">
+      {timeline.map((item) => (
+        <li class="timeline-item">
+          <span class="timeline-icon" aria-hidden="true">
+            {item.icon}
+          </span>
+          <p class="timeline-years">{item.years}</p>
+          <h2>{item.title}</h2>
+          {item.place && <p class="timeline-place">{item.place}</p>}
+          {item.text && <p class="timeline-text">{item.text}</p>}
+          {item.quote && <p class="timeline-quote">{item.quote}</p>}
+        </li>
+      ))}
+    </ol>
   </section>
 </BaseLayout>
+
+<style>
+  /* Wider column for the CV */
+  .cv-page {
+    max-width: 56rem;
+  }
+
+  /* Vertical line on the left */
+  .timeline {
+    list-style: none;
+    margin: 3rem 0 0;
+    padding: 0;
+    border-left: 2px solid var(--color-soft);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding: 0 0 2.5rem 2.75rem;
+  }
+
+  /* Round icon on the line */
+  .timeline-icon {
+    position: absolute;
+    top: 0;
+    left: calc(-1.25rem - 1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 3px solid var(--color-background);
+    border-radius: 50%;
+    background: var(--color-soft);
+    font-size: 1.2rem;
+  }
+
+  /* Personal sentence */
+  .timeline-quote {
+    margin-top: 0.75rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--color-accent);
+    font-family: var(--font-headings);
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+
+  /* Fade in while scrolling (only when JavaScript works) */
+  .timeline.animate .timeline-item {
+    opacity: 0;
+    transform: scale(0.9);
+    transition:
+      opacity 0.8s,
+      transform 0.8s;
+  }
+
+  .timeline.animate .timeline-item.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .timeline.animate .timeline-item {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  .timeline-years {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+  }
+
+  .timeline-item h2 {
+    white-space: pre-line;
+    margin: 0.25rem 0;
+    font-size: 1.3rem;
+  }
+
+  .timeline-place {
+    margin: 0;
+    font-style: italic;
+  }
+
+  /* Allow line breaks (\n) in the text */
+  .timeline-text {
+    white-space: pre-line;
+  }
+</style>
+
+<script>
+  // Let each period fade in when it scrolls into view
+  const timeline = document.querySelector(".timeline");
+
+  if (timeline && "IntersectionObserver" in window) {
+    timeline.classList.add("animate");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // Visible while in view, hidden again when it leaves
+          entry.target.classList.toggle("visible", entry.isIntersecting);
+        });
+      },
+      { threshold: 0.2 },
+    );
+
+    timeline.querySelectorAll(".timeline-item").forEach((item) => {
+      observer.observe(item);
+    });
+  }
+</script>

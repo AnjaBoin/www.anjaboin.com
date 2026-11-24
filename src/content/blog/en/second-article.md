@@ -1,6 +1,6 @@
 ---
 title: "My second article"
-description: "Why I want to become an application developer."
+description: "Why I want to become an software developer."
 pubDate: 2026-11-26
 image: "/images/anja-pasfoto.jpg"
 imageAlt: "Portrait of Anja"

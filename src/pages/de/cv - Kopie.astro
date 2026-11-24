@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+// Timeline: newest period first
+const timeline = [
+  {
+    years: "2026 – 2027",
+    title: "Umschulung zur Fachinformatikerin für Anwendungsentwicklung",
+    place: "Berufsförderungswerk Oberhausen",
+    text: "Java, SQL und Webentwicklung. Praktikum bei der Bruckmann Steuerungstechnik GmbH (Oktober bis Dezember 2026).",
+  },
+  {
+    years: "2001 – heute",
+    title: "Verkehrspilotin, seit 2019 Kapitänin",
+    place: "Lufthansa CityLine, Düsseldorf",
+    text: "Internationaler und nationaler Linienverkehr. Kapitänin auf dem CRJ-900; frühere Muster: CRJ-Serie, Embraer 195, Airbus A340-300.",
+  },
+  {
+    years: "2022",
+    title: "Ausbildungen zur Bewegungs- und Lebensstilcoaching",
+    place: "Benvitaal Academie, Online Kurs",
+    text: "Bewegungscoach, Ernährungscoach und Lebensstilcoach. Fokus auf Prävention und Gesundheitsförderung.",
+  },
+  {
+    years: "2021",
+    title: "IT-Weiterbildungen",
+    place: "Bit Academy, TechGrounds, Avans+, Codaisseur u. a. Online Kurse",
+    text: "Full Stack Web Development, Data Engineering, objektorientierte Programmierung, Design Thinking und Scrum Master (PSM1).",
+  },
+  {
+    years: "2019 – 2020",
+    title: "Ausbildung zur Mediatorin",
+    place: "Zentrum für Mediation, Steyerberg",
+    text: "Zertifizierte Mediatorin (BM-Richtlinien).",
+  },
+
+  {
+    years: "1997 – 2000",
+    title: "Verkehrspilotenausbildung (ATPL)",
+    place: "Nationale Flugschule, Enschede",
+    text: "Praktikum in Venice, Florida. Abschluss ATPL nach JAR-FCL.",
+  },
+  {
+    years: "1996 – 1997",
+    title: "Mitarbeiterin Sicherheitsabteilung",
+    place: "PBNA, Arnhem",
+    text: "Verwaltung von Kundendaten, Organisation und Abwicklung von Sicherheitsprüfungen.",
+  },
+  {
+    years: "1995 – 1996",
+    title: "Physiotherapeutin",
+    place: "Praxis Rick de Vries, Hamminkeln",
+    text: "Behandlung von Patienten mit Massage, Training und verschiedenen Therapieformen.",
+  },
+  {
+    years: "1991 – 1995",
+    title: "Studium Physiotherapie",
+    place: "HAN Hochschule, Arnhem/Nijmegen",
+    text: "Bachelor-Abschluss in Physiotherapie.",
+  },
+];
+---
+
+<BaseLayout title="Lebenslauf">
+  <section class="content cv-page">
+    <h1>Lebenslauf</h1>
+    <p>
+      Mein Weg in Stationen – vom Behandlungsraum über das Cockpit bis zum Code.
+    </p>
+
+    <ol class="timeline">
+      {timeline.map((item) => (
+        <li class="timeline-item">
+          <p class="timeline-years">{item.years}</p>
+          <h2>{item.title}</h2>
+          {item.place && <p class="timeline-place">{item.place}</p>}
+          {item.text && <p>{item.text}</p>}
+        </li>
+      ))}
+    </ol>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Wider column for the CV */
+  .cv-page {
+    max-width: 56rem;
+  }
+
+  /* Vertical line on the left */
+  .timeline {
+    list-style: none;
+    margin: 3rem 0 0;
+    padding: 0;
+    border-left: 2px solid var(--color-soft);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding: 0 0 2.5rem 2rem;
+  }
+
+  /* Dot on the line for every period */
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 0.35rem;
+    left: calc(-0.5rem - 1px);
+    width: 1rem;
+    height: 1rem;
+    border: 3px solid var(--color-background);
+    border-radius: 50%;
+    background: var(--color-accent);
+  }
+
+  .timeline-years {
+    margin: 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+  }
+
+  .timeline-item h2 {
+    margin: 0.25rem 0;
+    font-size: 1.3rem;
+  }
+
+  .timeline-place {
+    margin: 0;
+    font-style: italic;
+  }
+</style>
