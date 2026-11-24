@@ -8,6 +8,10 @@ export const ui = {
     'nav.cv': 'Lebenslauf',
     'nav.contact': 'Kontakt',
     'footer.rights': 'Alle Rechte vorbehalten.',
+    'blog.recent': 'Neueste Artikel',
+    'blog.aboutTitle': 'Über mich',
+    'blog.aboutText': 'Pilotin, Mediatorin und neugieriger Mensch. Hier schreibe ich über Kommunikation, Menschen und neue Wege.',
+    'blog.aboutLink': 'Mehr über mich →',
   },
   nl: {
     'nav.label': 'Hoofdmenu',
@@ -18,6 +22,10 @@ export const ui = {
     'nav.cv': 'CV',
     'nav.contact': 'Contact',
     'footer.rights': 'Alle rechten voorbehouden.',
+    'blog.recent': 'Nieuwste artikelen',
+    'blog.aboutTitle': 'Over mij',
+    'blog.aboutText': 'Piloot, mediator en nieuwsgierig mens. Hier schrijf ik over communicatie, mensen en nieuwe wegen.',
+    'blog.aboutLink': 'Meer over mij →',
   },
   en: {
     'nav.label': 'Main menu',
@@ -28,6 +36,10 @@ export const ui = {
     'nav.cv': 'CV',
     'nav.contact': 'Contact',
     'footer.rights': 'All rights reserved.',
+    'blog.recent': 'Latest articles',
+    'blog.aboutTitle': 'About me',
+    'blog.aboutText': 'Pilot, mediator and curious human. Here I write about communication, people and new paths.',
+    'blog.aboutLink': 'More about me →',
   },
 };
 

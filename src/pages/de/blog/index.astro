@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BlogLayout from '../../../layouts/BlogLayout.astro';
 import { getCollection } from 'astro:content';
 
 const lang = 'de';
@@ -10,11 +10,10 @@ const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<BaseLayout title="Blog">
-  <section class="content">
-    <h1>Blog</h1>
+<BlogLayout title="Blog">
+  <h1>Blog</h1>
 
-    <ul class="post-list">
+  <ul class="post-list">
       {posts.map((post) => (
         <li class="post-item">
           <a href={`/${lang}/blog/${post.id.replace(`${lang}/`, '')}/`}>
@@ -33,9 +32,8 @@ const posts = (await getCollection('blog'))
           <p>{post.data.description}</p>
         </li>
       ))}
-    </ul>
-  </section>
-</BaseLayout>
+      </ul>
+</BlogLayout>
 
 <style>
   .post-list {

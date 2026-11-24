@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BlogLayout from '../../../layouts/BlogLayout.astro';
 import { getCollection, render } from 'astro:content';
 
 // Make one page for every German post
@@ -17,27 +17,25 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<BaseLayout title={post.data.title}>
-  <article class="content">
-    {post.data.image && (
-      <img class="post-image" src={post.data.image} alt={post.data.imageAlt ?? ''} />
-    )}
+<BlogLayout title={post.data.title}>
+  {post.data.image && (
+    <img class="post-image" src={post.data.image} alt={post.data.imageAlt ?? ''} />
+  )}
 
-    <h1>{post.data.title}</h1>
+  <h1>{post.data.title}</h1>
 
-    <time datetime={post.data.pubDate.toISOString()}>
-      {post.data.pubDate.toLocaleDateString('de-DE', {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric',
-      })}
-    </time>
+  <time datetime={post.data.pubDate.toISOString()}>
+    {post.data.pubDate.toLocaleDateString('de-DE', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    })}
+  </time>
 
-    <Content />
+  <Content />
 
-    <p class="back-link"><a href="/de/blog/">← Zurück zum Blog</a></p>
-  </article>
-</BaseLayout>
+  <p class="back-link"><a href="/de/blog/">← Zurück zum Blog</a></p>
+</BlogLayout>
 
 <style>
   .post-image {
