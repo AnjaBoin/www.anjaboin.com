@@ -35,6 +35,7 @@ desktop.ini
 
 # secret ordners and files
 secret/
+private/
 
 # editor 
 .vscode/
