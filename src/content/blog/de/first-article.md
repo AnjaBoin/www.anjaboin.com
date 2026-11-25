@@ -1,13 +1,13 @@
 ---
-title: "Mein erster Artikel"
+title: "Meine Website - Hintergrund Gedanke"
 description: "Warum ich diese Website baue."
 pubDate: 2026-11-24
-image: "/images/anja-hero.jpg"
-imageAlt: "Anja vor einer bunten Wand"
+image: "/images/erster-artikel.jpg"
+imageAlt: "Baum mit Symbole"
 ---
 
 Hier beginnt mein erster Artikel. Ein ganz normaler Absatz.
 
-## Eine Zwischenüberschrift
+## Eine eigene Website
 
 Noch ein Absatz, mit einem **fett gedruckten** Wort und einem *kursiven* Wort.
