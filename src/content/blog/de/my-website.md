@@ -1,6 +1,6 @@
 ---
 title: "Der Gedanke hinter meine Website"
-description: "Warum ich diese Website baue."
+description: "Warum ich diese Website gebaut habe."
 pubDate: 2026-11-24
 image: "/images/blog/my-website/my-website.jpg"
 imageAlt: "Baum mit Symbolen"
@@ -30,7 +30,7 @@ Ziemlich schnell wurde mir klar, was ich wollte. Ich wollte meine recht ungewöh
 
 ## Eine IT-Karriere und eine eigene Website
 
-Über den üblichen deutschen Weg für arbeitsunfähige Grenzgänger (mehr dazu erfährst du in [diesem Artikel](src/content/blog/de/grenzarbeiter.md)) landete ich schließlich beim BFW in Oberhausen. Dort entschied ich mich für eine Umschulung zur Fachinformatikerin für Anwendungsentwicklung. Und siehe da: Plötzlich kamen zwei Welten zusammen –> mein alter Wunsch, eine Website zu bauen, und meine neue Ausbildung in der IT. Während meines Praktikums hatte ich etwas Zeit übrig. Und noch wichtiger: Ich hatte endlich Inspiration.
+Über den üblichen deutschen Weg für arbeitsunfähige Grenzgänger (mehr dazu erfährst du in [diesem Artikel](/de/blog/grenzarbeiter/) landete ich schließlich beim BFW in Oberhausen. Dort entschied ich mich für eine Umschulung zur Fachinformatikerin für Anwendungsentwicklung. Und siehe da: Plötzlich kamen zwei Welten zusammen –> mein alter Wunsch, eine Website zu bauen, und meine neue Ausbildung in der IT. Während meines Praktikums hatte ich etwas Zeit übrig. Und noch wichtiger: Ich hatte endlich Inspiration.
 
 Ich wollte etwas schaffen, bei dem andere an meinem recht ungewöhnlichen Leben teilhaben können. An meinen Erfahrungen, meinen Entscheidungen, meinen Abenteuern und vielleicht auch an meinen Fehltritten. Nicht, weil mein Leben so außergewöhnlich ist, dass darüber eine Biografie mit hunderttausend Exemplaren erscheinen müsste, sondern weil ich glaube, dass wir viel voneinander lernen können. Und manchmal ist es einfach schön, einen Blick in das Leben eines anderen Menschen zu werfen. Eine Website schien mir dafür das ideale Medium zu sein. Jeder kann selbst entscheiden, was er lesen möchte, wann und wie viel. Keine Verpflichtungen, kein Abo auf meinen täglichen Kleinkram und zum Glück auch kein wöchentlicher Newsletter, den man nicht abbestellen kann.
 
@@ -41,3 +41,5 @@ Außerdem hatte ich jetzt sowohl die Zeit als auch die Gelegenheit, meine Websit
 Auf meiner Website findest du inzwischen unter anderem meinen Lebenslauf, eine ausführliche Geschichte über mich und natürlich meinen Blog. Dort schreibe ich über mein Leben, meine Erfahrungen und die Dinge, die mich beschäftigen. Ich hoffe, dass du dich in manchen Geschichten wiedererkennst, dass du ab und zu schmunzeln musst und vielleicht sogar etwas entdeckst, das dir weiterhilft. Ein bisschen Leichtigkeit, eine Prise Humor und hin und wieder eine neue Perspektive: Das möchte ich meinen Leserinnen und Lesern gern mitgeben. Und wer weiß, vielleicht kann ich auf diese Weise doch noch etwas für andere bewirken. Nicht aus dem Cockpit, von der Massageliege oder aus einem IT-Büro, sondern einfach von meiner eigenen Website aus.
 
 Ich lade dich deshalb herzlich ein, dich umzusehen. Und über Feedback freue ich mich riesig! Was hast du gern gelesen? Welche Geschichte hat dich berührt oder zum Nachdenken gebracht? Und vielleicht das Wichtigste: Konnte ich dich mit irgendetwas inspirieren? Ich freue mich, von dir zu hören. Denn eine Website bauen kann ich inzwischen selbst, aber ein bisschen Hilfe dabei, herauszufinden, was meine Leser davon halten, ist natürlich immer willkommen.
+
+<img src="/images/blog/my-website/my-website2.JPG" alt="Das neue IT-Büro" style="max-width: 40%; margin: 1.5rem auto;" />

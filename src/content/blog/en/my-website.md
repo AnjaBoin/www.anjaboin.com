@@ -1,6 +1,6 @@
 ---
 title: "My website - the thought behind it"
-description: "Why I am building this website."
+description: "Why I builded this website."
 pubDate: 2026-11-24
 image: "/images/blog/my-website/my-website.jpg"
 imageAlt: "Tree with symbols"
@@ -30,7 +30,7 @@ It quickly became clear what I wanted. I wanted to use my rather unusual career 
 
 ## An IT career and a website of my own
 
-Through the usual German route for cross-border workers who are unable to work (you can read more about that in [this article](grenzarbeiter.md)), I eventually ended up at the BFW in Oberhausen. There I chose to retrain as an application developer (Fachinformatikerin für Anwendungsentwicklung). And look at that: suddenly two worlds came together – my old wish to build a website and my new training in IT. During my internship I had some time to spare. And more importantly: I finally had inspiration.
+Through the usual German route for cross-border workers who are unable to work (you can read more about that in [diesem Artikel](/en/blog/grenzarbeiter/), I eventually ended up at the BFW in Oberhausen. There I chose to retrain as an application developer (Fachinformatikerin für Anwendungsentwicklung). And look at that: suddenly two worlds came together – my old wish to build a website and my new training in IT. During my internship I had some time to spare. And more importantly: I finally had inspiration.
 
 I wanted to create something where others could share in my rather unusual life. My experiences, my choices, my adventures and perhaps my missteps too. Not because my life is so exceptional that it deserves a biography with a print run of a hundred thousand copies, but because I believe we can learn a lot from each other. And sometimes it's simply nice to take a peek into someone else's life. A website seemed the ideal medium for that. Everyone can decide for themselves what they want to read, when and how much. No obligations, no subscription to my daily goings-on and, thankfully, no weekly newsletter you can't unsubscribe from.
 
@@ -41,3 +41,5 @@ What's more, I now had both the time and the opportunity to build my website ent
 On my website you will now find, among other things, my career, a detailed story about myself and, of course, my blog. That's where I write about my life, my experiences and the things on my mind. I hope you'll recognise yourself in some of the stories, that you'll smile now and then and perhaps even discover something useful for yourself. A little lightness, a dash of humour and now and then a new perspective: that's what I'd like to give my readers. And who knows, perhaps in this way I can still mean something to others. Not from the cockpit, the massage table or an IT office, but simply from my own website.
 
 So I warmly invite you to have a look around. And I love feedback! What did you enjoy reading? Which story touched you or made you think? And perhaps most importantly: did I manage to inspire you in some way? I'd love to hear from you. Because building a website is something I can now do myself – but a little help finding out what readers think of it is always welcome.
+
+<img src="/images/blog/my-website/my-website2.JPG" alt="Das neue IT-Büro" style="max-width: 40%; margin: 1.5rem auto;" />

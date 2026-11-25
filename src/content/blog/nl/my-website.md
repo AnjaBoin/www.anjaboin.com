@@ -1,6 +1,6 @@
 ---
 title: "Mijn website – de gedachte erachter"
-description: "Waarom ik deze website bouw."
+description: "Waarom ik deze website bouwde."
 pubDate: 2026-11-24
 image: "/images/blog/my-website/my-website.jpg"
 imageAlt: "Boom met symbolen"
@@ -29,7 +29,7 @@ Al vrij snel werd duidelijk wat ik wilde. Ik wilde mijn nogal ongebruikelijke ca
 
 ## Een IT-carrière én een eigen website
 
-Via het gebruikelijke Duitse traject voor arbeidsongeschikte grensarbeiders (daarover lees je meer in [dit artikel]) kwam ik uiteindelijk terecht bij het BFW in Oberhausen. Daar koos ik voor een omscholing tot Fachinformatikerin Anwendungsentwicklung. En kijk, ineens kwamen twee werelden bij elkaar: mijn oude wens om een website te bouwen en mijn nieuwe opleiding in de IT. Tijdens mijn stage had ik wat tijd over. En belangrijker nog: ik had eindelijk inspiratie.
+Via het gebruikelijke Duitse traject voor arbeidsongeschikte grensarbeiders (daarover lees je meer in [dit artikel](/de/blog/grenzarbeiter/)) kwam ik uiteindelijk terecht bij het BFW in Oberhausen. Daar koos ik voor een omscholing tot Fachinformatikerin Anwendungsentwicklung. En kijk, ineens kwamen twee werelden bij elkaar: mijn oude wens om een website te bouwen en mijn nieuwe opleiding in de IT. Tijdens mijn stage had ik wat tijd over. En belangrijker nog: ik had eindelijk inspiratie.
 
 Ik wilde iets maken waarin anderen konden meelezen met mijn nogal ongebruikelijke leven. Mijn ervaringen, mijn keuzes, mijn avonturen en misschien ook mijn misstappen. Niet omdat mijn leven nu zo uitzonderlijk is dat er een biografie van honderdduizend exemplaren van moet verschijnen, maar omdat ik geloof dat we veel van elkaar kunnen leren. En soms is het gewoon leuk om eens een kijkje te nemen in het leven van iemand anders. Een website leek me daarvoor het ideale medium. Iedereen kan zelf bepalen wat hij of zij wil lezen, wanneer en hoeveel. Geen verplichtingen, geen abonnement op mijn dagelijkse beslommeringen en gelukkig ook geen wekelijkse nieuwsbrief die je niet kunt opzeggen.
 
@@ -40,3 +40,5 @@ Bovendien had ik nu zowel de tijd als de gelegenheid om mijn website helemaal ze
 Op mijn website vind je inmiddels onder andere mijn carrière, een uitgebreid verhaal over mezelf en natuurlijk mijn blog. Daar schrijf ik over mijn leven, mijn ervaringen en de dingen die me bezighouden. Ik hoop dat je je in sommige verhalen herkent, dat je af en toe moet glimlachen en misschien zelfs iets ontdekt waar je zelf wat aan hebt. Een beetje lichtheid, een vleugje humor en zo nu en dan een nieuw perspectief: dat is wat ik mijn lezers graag wil meegeven. En wie weet kan ik op die manier toch nog iets betekenen voor anderen. Niet vanuit de cockpit, de massagetafel of een IT bureau, maar gewoon vanaf mijn eigen website.
 
 Ik nodig je dan ook van harte uit om rond te kijken. En feedback vind ik geweldig! Wat vond je leuk om te lezen? Welk verhaal raakte je of zette je aan het denken? En misschien nog wel het belangrijkste: heb ik je ergens mee kunnen inspireren? Ik hoor het graag. Want een website bouwen kan ik inmiddels zelf, maar een beetje hulp bij het ontdekken wat lezers ervan vinden, is natuurlijk altijd welkom.
+
+<img src="/images/blog/my-website/my-website2.JPG" alt="Das neue IT-Büro" style="max-width: 40%; margin: 1.5rem auto;" />
