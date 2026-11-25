@@ -12,6 +12,7 @@ export const ui = {
     'blog.aboutTitle': 'Über mich',
     'blog.aboutText': 'Pilotin, Mediatorin und neugieriger Mensch. Hier schreibe ich über Kommunikation, Menschen und neue Wege.',
     'blog.aboutLink': 'Mehr über mich →',
+    'footer.privacy': 'Datenschutz',
   },
   nl: {
     'nav.label': 'Hoofdmenu',
@@ -26,6 +27,7 @@ export const ui = {
     'blog.aboutTitle': 'Over mij',
     'blog.aboutText': 'Piloot, mediator en nieuwsgierig mens. Hier schrijf ik over communicatie, mensen en nieuwe wegen.',
     'blog.aboutLink': 'Meer over mij →',
+    'footer.privacy': 'Privacy',
   },
   en: {
     'nav.label': 'Main menu',
@@ -40,6 +42,7 @@ export const ui = {
     'blog.aboutTitle': 'About me',
     'blog.aboutText': 'Pilot, mediator and curious human. Here I write about communication, people and new paths.',
     'blog.aboutLink': 'More about me →',
+    'footer.privacy': 'Privacy',
   },
 };
 
