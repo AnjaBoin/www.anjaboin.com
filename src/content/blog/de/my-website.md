@@ -1,16 +1,18 @@
 ---
-title: "Der Gedanke hinter meine Website"
+title: "Der Gedanke hinter meiner Website"
 description: "Warum ich diese Website gebaut habe."
 pubDate: 2026-11-24
 image: "/images/blog/my-website/my-website.jpg"
 imageAlt: "Baum mit Symbolen"
 ---
 
-Schon seit Jahren spielte ich mit dem Gedanken, eine eigene Website zu starten. Websites faszinieren mich, solange ich auf Internet herumspiele. Kurz zwischendurch; damals gab es noch kein Google, aber Altavista. Für die Kenner unter uns... Zurück zum Thema Websites. Vor allem die schönen, eleganten Exemplare, bei denen alles genau am richtigen Platz steht und man fast von selbst weiterklicken möchte. Das wollte ich auch können. Nicht nur ausdenken, wie so etwas aussehen sollte, sondern es am liebsten auch selbst bauen.....<br /><img src="/images/blog/my-website/altavista-logo.png" alt="Logo von AltaVista" style="max-width: 40%; margin: 1.5rem auto;" />
+Schon seit Jahren spielte ich mit dem Gedanken, eine eigene Website zu starten. Websites faszinieren mich, seit ich im Internet unterwegs bin. Kurz zwischendurch; damals gab es noch kein Google, sondern Altavista. Für die Kenner unter uns... Zurück zum Thema Websites. Vor allem die schönen, eleganten Exemplare, bei denen alles genau am richtigen Platz steht und man fast von selbst weiterklicken möchte. Das wollte ich auch können. Nicht nur ausdenken, wie so etwas aussehen sollte, sondern es am liebsten auch selbst bauen.....
+
+<img src="/images/blog/my-website/altavista-logo.png" alt="Logo von AltaVista" style="max-width: 40%; margin: 1.5rem auto;" />
 
 ## Programmieren lernen
 
-Meine Chance kam im Coronajahr. Ich entdeckte das geförderte Programm *NL leert door*, was soviel bedeutet wie *Niederlande lernt weiter*, mit dem die niederländische Regierung alle möglichen kostenlosen Kurse anbot. Eine fantastische Gelegenheit, meiner Neugier einmal so richtig freien Lauf zu lassen. Ich schloss verschiedene Kurse ab (in der Praxis hieß das; ich griff so viel wie ich konnte und schloß zum Schluss 52 Kurse ab mit Zertifikat) und konnte zu meiner großen Freude sogar eine Ausbildung zur Full Stack Developerin machen. Das klang gleich ziemlich beeindruckend. Und kompliziert. Aber Letzteres merkte ich ziemlich schnell.
+Meine Chance kam im Coronajahr. Ich entdeckte das geförderte Programm *NL leert door*, was soviel bedeutet wie *die Niederlande lernt weiter*, mit dem die niederländische Regierung alle möglichen kostenlosen Kurse anbot. Eine fantastische Gelegenheit, meiner Neugier einmal so richtig freien Lauf zu lassen. Ich schloss verschiedene Kurse ab (in der Praxis hieß das: Ich griff zu, so viel ich konnte, und schloss am Ende 52 Kurse mit Zertifikat ab) und konnte zu meiner großen Freude sogar eine Ausbildung zur Full Stack Developerin machen. Das klang gleich ziemlich beeindruckend. Und kompliziert. Aber Letzteres merkte ich ziemlich schnell.
 
 Der Kurs war inspirierend, aber auch ein wenig ernüchternd. Ich fand einen Lernpartner in Sander, der gleichzeitig mit mir angefangen hatte. Es gab nur einen kleinen Unterschied: Sander war dreißig Jahre jünger als ich. Wir waren beide gleich motiviert und ehrgeizig, aber während er den Lernstoff manchmal schon aufzusaugen schien, bevor der Dozent überhaupt ausgeredet hatte, brauchte ich ab und zu etwas mehr Zeit, um alles sacken zu lassen. Und dann noch einmal sacken zu lassen.
 
@@ -24,13 +26,13 @@ Nach vier Monaten Kurs kam ich mit PHP, HTML und CSS ganz gut zurecht. Eine sch�
 
 ## Eine unerwartete Wendung
 
-Bis mein Leben eine unerwartete Wendung nahm. Als fluguntaugliche Pilotin saß ich plötzlich zu Hause und war mehr oder weniger gezwungen, darüber nachzudenken, was ich mit meinem Leben noch anfangen wollte. Ich hatte die fünfzig inzwischen hinter mir gelassen und stand vor einem ziemlichen heftigen Karrierewechsel. Wenn ich beruflich noch einmal eine neue Abzweigung nehmen wollte, dann war das eigentlich genau der richtige Moment.
+Bis mein Leben eine unerwartete Wendung nahm. Als ich aus gesundheitlichen Gründen nicht mehr im Cockpit saß, war ich plötzlich zu Hause und mehr oder weniger gezwungen, darüber nachzudenken, was ich mit meinem Leben noch anfangen wollte. Ich hatte die fünfzig inzwischen hinter mir gelassen und stand vor einem ziemlichen heftigen Karrierewechsel. Wenn ich beruflich noch einmal eine neue Abzweigung nehmen wollte, dann war das eigentlich genau der richtige Moment.
 
 Ziemlich schnell wurde mir klar, was ich wollte. Ich wollte meine recht ungewöhnliche Laufbahn und die Entscheidungen, die ich in meinem Leben getroffen hatte, nutzen, um andere zu inspirieren. Ich hatte inzwischen eine Menge erlebt. Von der Physiotherapeutin zur Pilotin, von der Mediatorin zu einer neuen Ausbildung in der IT: Mein Lebenslauf war wirklich nicht nach Drehbuch verlaufen. Vielleicht konnten andere etwas mit meinen Erfahrungen anfangen, mit meinen Entscheidungen und den Lektionen, die ich unterwegs gelernt hatte. Außerdem wollte ich meinen Ausbildungen und Interessen im Bereich Kommunikation, Gewaltfreie Kommunikation und Coaching mehr gerecht werden. Das Interesse an anderen Menschen und die Fürsorge für andere sind tief in mir verwurzelt. Trotzdem hatte ich in meinem Berufsleben bisher nicht oft die Gelegenheit, diese Qualitäten wirklich in den Mittelpunkt zu stellen.
 
 ## Eine IT-Karriere und eine eigene Website
 
-Über den üblichen deutschen Weg für arbeitsunfähige Grenzgänger (mehr dazu erfährst du in [diesem Artikel](/de/blog/grenzarbeiter/) landete ich schließlich beim BFW in Oberhausen. Dort entschied ich mich für eine Umschulung zur Fachinformatikerin für Anwendungsentwicklung. Und siehe da: Plötzlich kamen zwei Welten zusammen –> mein alter Wunsch, eine Website zu bauen, und meine neue Ausbildung in der IT. Während meines Praktikums hatte ich etwas Zeit übrig. Und noch wichtiger: Ich hatte endlich Inspiration.
+Auf Umwegen landete ich schließlich beim BFW in Oberhausen (mehr dazu erfährst du in [diesem Artikel](/de/blog/grenzarbeiter/)). Dort entschied ich mich für eine Umschulung zur Fachinformatikerin für Anwendungsentwicklung. Und siehe da: Plötzlich kamen zwei Welten zusammen; mein alter Wunsch, eine Website zu bauen, und meine neue Ausbildung in der IT. Während meines Praktikums hatte ich etwas Zeit übrig. Und noch wichtiger: Ich hatte endlich Inspiration.
 
 Ich wollte etwas schaffen, bei dem andere an meinem recht ungewöhnlichen Leben teilhaben können. An meinen Erfahrungen, meinen Entscheidungen, meinen Abenteuern und vielleicht auch an meinen Fehltritten. Nicht, weil mein Leben so außergewöhnlich ist, dass darüber eine Biografie mit hunderttausend Exemplaren erscheinen müsste, sondern weil ich glaube, dass wir viel voneinander lernen können. Und manchmal ist es einfach schön, einen Blick in das Leben eines anderen Menschen zu werfen. Eine Website schien mir dafür das ideale Medium zu sein. Jeder kann selbst entscheiden, was er lesen möchte, wann und wie viel. Keine Verpflichtungen, kein Abo auf meinen täglichen Kleinkram und zum Glück auch kein wöchentlicher Newsletter, den man nicht abbestellen kann.
 

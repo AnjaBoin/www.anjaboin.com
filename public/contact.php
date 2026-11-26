@@ -1,10 +1,6 @@
 <?php
 declare(strict_types=1);
 
-// TEMPORARY: show errors while debugging. Remove these two lines afterwards!
-ini_set('display_errors', '1');
-error_reporting(E_ALL);
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
