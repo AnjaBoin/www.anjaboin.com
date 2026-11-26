@@ -10,11 +10,13 @@ imageAlt: "Grensarbeider aan een tafel."
 
 Ik ben bijna mijn hele werkzame leven grensarbeider geweest. Ik woonde doorgaans in Nederland (op een korte periode na, waarin ik een jaar in Düsseldorf woonde) en werkte in Duitsland. Het leven als grensarbeider is eigenlijk best overzichtelijk, zolang je – zoals ik – maar in één land tegelijk werkt. Je hebt weliswaar met belastingaangiften in beide landen te maken, maar omdat je in het ene land geen inkomsten hebt, krijg je daar vrijstellingen en betaal je uiteindelijk belasting in het andere land. Tot zover weinig aan de hand.
 
+## Sociaal verzekerd als grensarbeider
+
 Het leven werd een stuk ingewikkelder toen ik langdurig ziek werd en uiteindelijk tijdelijk arbeidsongeschikt raakte. Ineens kreeg ik te maken met een verzameling juridische en administratieve eigenaardigheden waar ik tot dan toe gelukkig geen weet van had. Binnen de Europese Unie ben je als grensarbeider in principe maar in één land tegelijk sociaal verzekerd. Aan dat land betaal je ook je premies en daar moet je dus aankloppen voor je sociale uitkeringen. Dat klinkt overzichtelijk, maar er bestaat een bijzondere uitzondering: afhankelijk van je werksituatie kun je zelfs per dag van sociaal verzekeringsland wisselen. Dat gebeurt bijvoorbeeld bij grensarbeiders die een dagje thuiswerken. Bijzonder onhandig, want de sociale verzekeringsstelsels van de verschillende landen verschillen nogal van elkaar. Ik zou er nog achter komen hoeveel verschil dat kan maken.
 
-## Ziekengeld en het probleem van de ziekmelding
+## Ziektewetuitkering en ziekmelding
 
-In mijn geval werkte ik in Duitsland, betaalde ik al jarenlang premies in Duitsland en was ik dus aangewezen op het Duitse sociale zekerheidsstelsel. Mijn eerste kennismaking daarmee was via het Krankengeld (ziekengeld). In Duitsland wordt Krankengeld onder bepaalde voorwaarden maximaal 78 weken uitgekeerd. Daar staat tegenover dat je iedere maand een ziektebriefje moet inleveren. En dat luistert nogal nauw: er mag absoluut geen enkel gat zitten tussen de opeenvolgende ziekmeldingen. Eén dagje zonder geldige ziekmelding kan al problemen opleveren.
+In mijn geval werkte ik in Duitsland, betaalde ik al jarenlang premies in Duitsland en was ik dus aangewezen op het Duitse sociale zekerheidsstelsel. Mijn eerste kennismaking daarmee was via het Krankengeld (ziektewetuitkering). In Duitsland wordt Krankengeld onder bepaalde voorwaarden maximaal 78 weken uitgekeerd. Daar staat tegenover dat je iedere maand een ziektebriefje moet inleveren. En dat luistert nogal nauw: er mag absoluut geen enkel gat zitten tussen de opeenvolgende ziekmeldingen. Eén dagje zonder geldige ziekmelding kan al problemen opleveren.
 
 Als grensarbeider bleek het vinden van een arts die bereid was zo'n verklaring af te geven een behoorlijke uitdaging. Ik woon immers in Nederland, waar mijn huisarts, specialisten en volledige medische dossier zich bevinden. Maar voor mijn ziekmelding was Nederland niet verantwoordelijk. Nederlandse artsen mogen bovendien geen Duitse ziekmeldingen verzorgen. Dat was dus probleem nummer één.
 
@@ -24,7 +26,7 @@ Vervolgens moet een medewerker van de Krankenkasse zich er persoonlijk over buig
 
 Uiteindelijk bood de zogenaamde DVKA (Deutsche Verbindungsstelle Krankenversicherung Ausland), een soort *Schnittstelle* tussen de Krankenkasse en buitenlandse instanties, uitkomst. Na heel wat heen en weer mailen en de nodige administratieve inspanningen was het probleem opgelost. Vijf keer dezelfde fout. Je zou bijna denken dat er ergens iets structureel niet helemaal goed ging.
 
-## Het volgende probleem
+## De trucjes van de Krankenkasse
 
 Maar daarmee was ik er nog niet. De Krankenkasse bleek ook op andere manieren creatief met mijn geld om te gaan. Zo probeerde men een eenmalige uitkering uit een risicoverzekering ineens als maandelijkse rente te beschouwen. Dat zou betekenen dat ik daarover extra premies moest betalen. Volgens de Duitse wetgeving schijnt dat in bepaalde situaties te mogen, en het is vervolgens aan de verzekerde om daar bezwaar tegen te maken, indien de Krankenkasse de wetgeving wel heel ruim uitlegt in zijn eigen interesse. Wat ze in mijn geval dan ook deed.
 
@@ -36,11 +38,11 @@ De sociaal-medische dienst wilde mijn volledige dossier ontvangen. En ook hier g
 
 Nadat deze poging was gestrand, en de sociaal-medische dienst had bevestigd dat ik toch nog ziek was, had de Krankenkasse nog een laatste troef achter de hand. Voor mijn uiteindelijke uitval had ik een medische revalidatie (*medizinische Rehabilitation of ook wel 'een kuur' genoemd*) gevolgd. Daaruit was ik arbeidsgeschikt ontslagen. Sterker nog: tussen mijn revalidatie en mijn daadwerkelijke uitval had ik nog een aantal weken gewerkt.
 
-Maar ineens beweerde de Krankenkasse dat ik al ziek was geweest toen mijn revalidatie begon. Daarmee werd mijn ziektedatum met twee maanden naar voren geschoven. En dat betekende natuurlijk ook dat het Krankengeld twee maanden eerder zou eindigen. Dat was bepaald geen onschuldige administratieve correctie. Als ik niets had gedaan, was ik twee maanden ziekengeld kwijt geweest.
+Maar ineens beweerde de Krankenkasse dat ik al ziek was geweest toen mijn revalidatie begon. Daarmee werd mijn ziektedatum met twee maanden naar voren geschoven. En dat betekende natuurlijk ook dat het Krankengeld twee maanden eerder zou eindigen. Dat was bepaald geen onschuldige administratieve correctie. Als ik niets had gedaan, was ik twee maanden ziektewetuitkering kwijt geweest.
 
 Ik moest maar liefst twee keer bezwaar (*Widerspruch*) indienen voordat men tot een opmerkelijke ontdekking kwam: ik was destijds arbeidsgeschikt ontslagen uit de revalidatie en had daarna gewoon gewerkt. Dus moest het Krankengeld nog twee maanden langer worden uitbetaald. O, inderdaad. Dat was toen al bekend en de Krankenkasse was ook al 2 jaar in bezit van de papieren waarop stond dat ik destijds gewoon arbeidsgeschikt was. Zeer opmerkelijk gebeuren hoe ze dan 'zo maar' beweren dat het anders was. Na afloop van de maximale 78 weken was ik dan ook behoorlijk klaar met deze Krankenkasse.
 
-## Tussen ziekengeld en arbeidsongeschiktheidsuitkering
+## Tussen ziektewetuitkering en uitkering
 
 Helaas hield het daarmee niet op. Ik was nog steeds arbeidsongeschikt en herstellende, en kwam daardoor in het volgende Duitse loket terecht. Duitsland kent namelijk een merkwaardig gat tussen het Krankengeld en de arbeidsongeschiktheidsuitkering (*Erwerbsminderungsrente*). De Duitse Rentenversicherung heeft flinke achterstanden, waardoor de beoordeling soms maanden op zich laat wachten. Er kan daardoor gemakkelijk vier tot tien maanden zitten tussen het einde van het Krankengeld en de beslissing over de arbeidsongeschiktheidsuitkering.
 
