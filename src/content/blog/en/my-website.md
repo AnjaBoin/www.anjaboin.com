@@ -12,7 +12,7 @@ For years I had been playing with the idea of starting my own website. Websites 
 
 ## Learning to code
 
-My chance came in the Covid year. I discovered the subsidised programme *NL leert door* (which roughly means *the Netherlands keeps learning*), through which the Dutch government offered all kinds of free courses. A fantastic opportunity to really let my curiosity run free. I completed several courses and, to my great delight, was even able to train as a Full Stack Developer. That sounded quite impressive straight away. And complicated. But I found that out soon enough.
+My chance came in the Covid year. I discovered the subsidised programme *NL leert door* (which roughly means *the Netherlands keeps learning*), through which the Dutch government offered all kinds of free courses. A fantastic opportunity to really let my curiosity run free. I completed several courses (in practice, that meant grabbing everything I could: I finished 52 courses with a certificate) and, to my great delight, was even able to train as a Full Stack Developer. That sounded quite impressive straight away. And complicated. But I found that out soon enough.
 
 The course was inspiring, but also somewhat sobering. I found a study buddy in Sander, who started at the same time as me. There was just one small difference: Sander was thirty years younger than me. We were both equally motivated and driven, but while he sometimes seemed to soak up the material before the teacher had even finished speaking, I occasionally needed a bit more time to let it sink in. And then let it sink in again.
 

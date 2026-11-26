@@ -29,7 +29,7 @@ Al vrij snel werd duidelijk wat ik wilde. Ik wilde mijn nogal ongebruikelijke ca
 
 ## Een IT-carrière én een eigen website
 
-Via een omweg kwam ik uiteindelijk terecht bij het BFW in Oberhausen (daarover lees je meer in [dit artikel](/de/blog/grenzarbeiter/)). Daar koos ik voor een omscholing tot Fachinformatikerin Anwendungsentwicklung. En kijk, ineens kwamen twee werelden bij elkaar: mijn oude wens om een website te bouwen en mijn nieuwe opleiding in de IT. Tijdens mijn stage had ik wat tijd over. En belangrijker nog: ik had eindelijk inspiratie.
+Via een omweg kwam ik uiteindelijk terecht bij het BFW in Oberhausen (daarover lees je meer in [dit artikel](/nl/blog/grenzarbeiter/)). Daar koos ik voor een omscholing tot Fachinformatikerin Anwendungsentwicklung. En kijk, ineens kwamen twee werelden bij elkaar: mijn oude wens om een website te bouwen en mijn nieuwe opleiding in de IT. Tijdens mijn stage had ik wat tijd over. En belangrijker nog: ik had eindelijk inspiratie.
 
 Ik wilde iets maken waarin anderen konden meelezen met mijn nogal ongebruikelijke leven. Mijn ervaringen, mijn keuzes, mijn avonturen en misschien ook mijn misstappen. Niet omdat mijn leven nu zo uitzonderlijk is dat er een biografie van honderdduizend exemplaren van moet verschijnen, maar omdat ik geloof dat we veel van elkaar kunnen leren. En soms is het gewoon leuk om eens een kijkje te nemen in het leven van iemand anders. Een website leek me daarvoor het ideale medium. Iedereen kan zelf bepalen wat hij of zij wil lezen, wanneer en hoeveel. Geen verplichtingen, geen abonnement op mijn dagelijkse beslommeringen en gelukkig ook geen wekelijkse nieuwsbrief die je niet kunt opzeggen.
 
